@@ -84,7 +84,7 @@ for i, chunk in enumerate(chunks, 1):
     print(f"Chunk {i}:\n{chunk}\n---\n")
 
 # Text-to-Speech Conversion
-def text_to_speech(input_text, output_file, model = "tts-1", voice = "nova"):
+def text_to_speech(input_text, output_file, model = "tts-1", voice = "alloy"):
     # Initialize the OpenAI client
     client = openai.OpenAI(api_key=OPENAI_API_KEY)
     response = client.audio.speech.create(
